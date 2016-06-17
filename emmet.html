@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <!-- child > -->
+  ul>li
+
+  <!-- sibling + -->
+  span+p
+
+  <!-- Climb up ^ -->
+  div+section>p+em^bq
+
+  <!-- Multiplication * -->
+  ul>li*4
+
+  <!-- Item Numbering $ -->
+  .item$*3
+
+  ul>li.item$@3*5
+
+  ul>li.item$@-*5
+
+  <!-- Group -->
+  div(ul>li>p+span)*2
+
+  <!-- Class -->
+  .hello
+  p.class1.class2.class3
+
+  <!-- ID's -->
+  #slide.bs.carousel
+  form#contacto
+
+  <!--  Custom Attributes -->
+  p[title="encabezado"]
+
+  [a="value1" b="value2"]
+
+  <!-- texto -->
+  p{Hola mundo}
+
+  a[href="www.facebook.com"]{Facebook}
+
+  .section1>(ul>li.item${item$}*5)
+
+</body>
+</html>
